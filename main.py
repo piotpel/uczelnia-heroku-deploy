@@ -94,4 +94,4 @@ async def invert_image(file: UploadFile = File()):
 
 
 if __name__ == '__main__':
-    uvicorn.run("app", limit_max_requests=50)
+    uvicorn.run("main:app", limit_max_requests=50)

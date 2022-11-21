@@ -93,5 +93,3 @@ async def invert_image(file: UploadFile = File()):
     return StreamingResponse(responseImage, media_type="image/jpeg")
 
 
-if __name__ == '__main__':
-    uvicorn.run("main:app", limit_max_requests=50)

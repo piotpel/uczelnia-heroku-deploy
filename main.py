@@ -9,6 +9,7 @@ from typing import Union
 from fastapi.templating import Jinja2Templates
 from fastapi.responses import StreamingResponse, FileResponse, RedirectResponse
 import io
+import os
 
 app = FastAPI()
 templates = Jinja2Templates(directory="templates")
@@ -94,4 +95,5 @@ async def invert_image(file: UploadFile = File()):
 
 
 if __name__ == '__main__':
-    uvicorn.run(app, limit_max_requests=50)
+    port = int(os.environ.get("PORT", 5000))
+    uvicorn.run(app, port=port)

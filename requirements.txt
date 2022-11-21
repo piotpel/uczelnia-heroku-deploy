@@ -5,10 +5,12 @@ cffi==1.14.5
 future==0.18.2
 pillow==8.2.0
 ipython==7.22.0
+zlib==1.2.11
 olefile==0.46
 pip==21.0.1
 wheel==0.36.2
 brotli==1.0.9
+openssl==1.1.1k
 cryptography==3.4.7
 py==1.10.0
 lxml==4.6.3
@@ -27,8 +29,10 @@ six==1.15.0
 requests==2.25.1
 pkginfo==1.7.0
 colorama==0.4.4
+yaml==0.2.5
 pyyaml==5.4.1
 tblib==1.7.0
+numpy==1.20.1
 docutils==0.17
 fastapi==0.87.0
 starlette==0.21.0

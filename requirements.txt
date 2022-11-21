@@ -9,7 +9,6 @@ olefile==0.46
 pip==21.0.1
 wheel==0.36.2
 brotli==1.0.9
-openssl==1.1.1k
 cryptography==3.4.7
 py==1.10.0
 lxml==4.6.3

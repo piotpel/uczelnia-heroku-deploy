@@ -33,7 +33,7 @@ async def todays_date(username: Union[str, None] = Header(default=None),
     return str(datetime.datetime.now())
 
 
-@app.get("/primenumber/{n}")
+@app.get("/prime/{n}")
 async def prime_number(n: int) -> bool:
     if not isinstance(n, int):
         return {"Please pass an integer"}
